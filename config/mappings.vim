@@ -259,6 +259,11 @@ nnoremap <Leader>P "+P
 vnoremap <Leader>p "+p
 vnoremap <Leader>P "+P
 
+" Quotation management
+nnoremap <Leader>q" ciw""<Esc>P
+nnoremap <Leader>q' ciw''<Esc>P
+nnoremap <Leader>qd daW"=substitute(@@,"'\\\|\"","","g")<CR>P
+
 " Quick File Search with fzf
 nnoremap <silent> <Leader><space> :Files<CR>
 
