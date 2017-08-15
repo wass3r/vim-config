@@ -22,8 +22,8 @@ if get(g:, 'elite_mode')
 endif
 
 " Double leader key for toggling visual-line mode
-nmap <silent> <Leader><Leader> V
-vmap <Leader><Leader> <Esc>
+" nmap <silent> <Leader><Leader> V
+" vmap <Leader><Leader> <Esc>
 
 " Change current word in a repeatable manner
 nnoremap cn *``cgn
