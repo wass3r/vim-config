@@ -119,7 +119,9 @@ let g:markdown_fenced_languages = [
 	\  'sh',
 	\  'sass',
 	\  'xml',
-	\  'vim'
+	\  'vim',
+  \  'elm',
+  \  'html'
 	\]
 
 " }}}

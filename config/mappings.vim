@@ -248,7 +248,17 @@ vnoremap <Leader>S y:execute @@<CR>:echo 'Sourced selection.'<CR>
 nnoremap <Leader>S ^vg_y:execute @@<CR>:echo 'Sourced line.'<CR>
 
 " Yank buffer's absolute path to X11 clipboard
-nnoremap <Leader>y :let @+=expand("%:p")<CR>:echo 'Copied to clipboard.'<CR>
+" nnoremap <Leader>y :let @+=expand("%:p")<CR>:echo 'Copied to clipboard.'<CR>
+" https://www.reddit.com/r/neovim/comments/3fricd/easiest_way_to_copy_from_neovim_to_system/ctrru3b/
+nnoremap <Leader>Y "+yg_
+nnoremap <Leader>y "+y
+vnoremap <Leader>y "+y
+
+nnoremap <Leader>p "+p
+nnoremap <Leader>P "+P
+vnoremap <Leader>p "+p
+vnoremap <Leader>P "+P
+
 
 " Drag current line/s vertically and auto-indent
 vnoremap mk :m-2<CR>gv=gv

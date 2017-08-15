@@ -77,6 +77,8 @@ augroup MyAutoCmd
 	autocmd CursorHold *? syntax sync minlines=300
 augroup END
 
+let g:python3_host_prog = '/usr/local/bin/python3'
+
 " Initialize base requirements
 if has('vim_starting')
 	call s:source_file('init.vim')
