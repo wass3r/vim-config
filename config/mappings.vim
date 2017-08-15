@@ -259,6 +259,8 @@ nnoremap <Leader>P "+P
 vnoremap <Leader>p "+p
 vnoremap <Leader>P "+P
 
+" Quick File Search with fzf
+nnoremap <silent> <Leader><space> :Files<CR>
 
 " Drag current line/s vertically and auto-indent
 vnoremap mk :m-2<CR>gv=gv
