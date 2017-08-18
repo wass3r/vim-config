@@ -141,6 +141,12 @@ cmap W!! w !sudo tee % >/dev/null
 " Editor UI {{{
 " ---------
 
+" Open terminal
+nnoremap <Leader>ot :vsplit term://zsh<CR>
+
+" Close terminal
+tnoremap <Esc> <C-\><C-n>
+
 " I like to :quit with 'q', shrug.
 nnoremap <silent> q :<C-u>:quit<CR>
 nnoremap gQ <Nop>
