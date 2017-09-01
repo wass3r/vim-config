@@ -95,6 +95,8 @@
     let g:go_snippet_engine = 'neosnippet'
     let g:go_highlight_extra_types = 1
     let g:go_highlight_operators = 1
+    let g:go_auto_type_info = 1
+    let g:go_fmt_command = 'goimports'
 
 - repo: elmcast/elm-vim
   on_ft: elm
@@ -375,6 +377,7 @@
 # Only NeoVim ------------------------------
 - repo: zchee/deoplete-go
   if: has('nvim') && empty($VIM_MINIMAL)
+  build: make
   on_ft: go
   on_i: 1
 

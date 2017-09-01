@@ -192,7 +192,6 @@ if dein#tap('vim-gitgutter')
 endif
 
 if dein#tap('vim-go')
-	let g:go_fmt_command = 'goimports'
 	autocmd MyAutoCmd FileType go
 		\   nmap <C-]> <Plug>(go-def)
 		\ | nmap <Leader>god  <Plug>(go-describe)

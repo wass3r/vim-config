@@ -24,7 +24,7 @@ call deoplete#custom#set('_', 'min_pattern_length', 2)
 " ---
 
 let g:deoplete#sources = get(g:, 'deoplete#sources', {})
-let g:deoplete#sources.go = ['vim-go']
+" let g:deoplete#sources.go = ['vim-go']
 " let g:deoplete#sources.javascript = ['file', 'ternjs']
 " let g:deoplete#sources.jsx = ['file', 'ternjs']
 
