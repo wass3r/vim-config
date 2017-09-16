@@ -14,12 +14,12 @@ map <Nul> <C-Space>
 map! <Nul> <C-Space>
 
 " Disable arrow movement, resize splits instead.
-if get(g:, 'elite_mode')
-	nnoremap <Up>    :resize +2<CR>
-	nnoremap <Down>  :resize -2<CR>
-	nnoremap <Left>  :vertical resize +2<CR>
-	nnoremap <Right> :vertical resize -2<CR>
-endif
+" if get(g:, 'elite_mode')
+nnoremap <Up>    :resize +2<CR>
+nnoremap <Down>  :resize -2<CR>
+nnoremap <Left>  :vertical resize +2<CR>
+nnoremap <Right> :vertical resize -2<CR>
+" endif
 
 " Double leader key for toggling visual-line mode
 " nmap <silent> <Leader><Leader> V
@@ -55,6 +55,10 @@ nmap <S-Tab>  <C-w>W
 "}}}
 " Global niceties {{{
 " ---------------
+
+" Navigation search results will center on the line it's found on
+nnoremap n nzzzv
+nnoremap N Nzzzv
 
 " Start an external command with a single bang
 nnoremap ! :!
@@ -330,6 +334,8 @@ endfunction "}}}
 
 " s: Windows and buffers {{{
 
+nnoremap <S-left> :bprevious<CR>
+nnoremap <S-right> :bnext<CR>
 nnoremap <silent> [Window]v  :<C-u>split<CR>
 nnoremap <silent> [Window]g  :<C-u>vsplit<CR>
 nnoremap <silent> [Window]t  :tabnew<CR>

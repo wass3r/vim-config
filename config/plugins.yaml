@@ -22,6 +22,15 @@
 # Lazy Loading
 # ==========================================
 
+# Themes
+# ---------
+- { repo: kristijanhusak/vim-hybrid-material }
+- { repo: hzchirs/vim-material }
+- { repo: kudabux/vim-srcery-drk }
+- repo: ayu-theme/ayu-vim
+  hook_add: |
+    let ayucolor="dark"
+
 # Languages
 # ---------
 - { repo: hail2u/vim-css3-syntax, on_ft: css }
@@ -93,10 +102,22 @@
     let g:go_def_mapping_enabled = 0
     let g:go_loaded_gosnippets = 1
     let g:go_snippet_engine = 'neosnippet'
+    let g:go_highlight_types = 1
+    let g:go_highlight_fields = 1
+    let g:go_highlight_functions = 1
+    let g:go_highlight_methods = 1
+    let g:go_highlight_structs = 1
+    let g:go_highlight_build_constraints = 1
     let g:go_highlight_extra_types = 1
     let g:go_highlight_operators = 1
     let g:go_auto_type_info = 1
+    let g:go_auto_sameids = 1
     let g:go_fmt_command = 'goimports'
+
+- repo: sebdah/vim-delve
+  on_ft: go
+  hook_source: |
+    let g:delve_backend = "native"
 
 - repo: elmcast/elm-vim
   on_ft: elm
@@ -152,6 +173,7 @@
 - { repo: mbbill/undotree, on_cmd: UndotreeToggle }
 - { repo: metakirby5/codi.vim, on_cmd: Codi, if: empty($VIM_MINIMAL) }
 - { repo: Shougo/vimproc.vim, build: make, on_func: vimproc# }
+- { repo: Shougo/vimshell.vim }
 - { repo: reedes/vim-wordy, on_cmd: [ Wordy, NextWordy, PrevWordy ]}
 - { repo: brooth/far.vim, on_cmd: [ Far, Farp, F ] }
 - { repo: jreybert/vimagit, on_cmd: Magit }

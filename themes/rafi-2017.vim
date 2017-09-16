@@ -14,7 +14,7 @@ endif
 " ---------------------------------------------------------
 set showbreak=↪
 set fillchars=vert:│,fold:─
-set listchars=tab:\▏\ ,extends:⟫,precedes:⟪,nbsp:␣,trail:·
+set listchars=tab:\▏\ ,extends:⟫,precedes:⟪,nbsp:␣,trail:·,space:␣
 
 " icons:  ▏│ ¦ ╎ ┆ ⋮ ⦙ ┊ 
 " }}}
@@ -203,10 +203,10 @@ let g:tagbar_iconchars = ['▷', '◢']
 
 " Plugin: Neomake icons {{{
 " ---------------------------------------------------------
-let g:neomake_error_sign = {'text': '!', 'texthl': 'ErrorMsg'}
-let g:neomake_warning_sign = {'text': '!', 'texthl': 'WarningMsg'}
-let g:neomake_message_sign = {'text': '⌂', 'texthl': 'NeomakeMessageSign'}
-let g:neomake_info_sign = {'text': '⍞', 'texthl': 'NeomakeInfoSign'}
+let g:neomake_error_sign = {'text': '✖', 'texthl': 'ErrorMsg'}
+let g:neomake_warning_sign = {'text': '∆', 'texthl': 'WarningMsg'}
+let g:neomake_message_sign = {'text': '➤', 'texthl': 'NeomakeMessageSign'}
+let g:neomake_info_sign = {'text': 'ℹ', 'texthl': 'NeomakeInfoSign'}
 "}}}
 
 " Plugin: GitGutter icons {{{
