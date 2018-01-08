@@ -77,6 +77,12 @@ augroup MyAutoCmd
 	autocmd CursorHold *? syntax sync minlines=300
 augroup END
 
+augroup numbertoggle
+	autocmd!
+	autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+	autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
+
 let g:python3_host_prog = '/usr/local/bin/python3'
 
 " Initialize base requirements

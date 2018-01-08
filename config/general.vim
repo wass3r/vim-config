@@ -150,12 +150,12 @@ endif
 " }}}
 " Editor UI Appearance {{{
 " --------------------
-set noshowmode          " Don't show mode in cmd window
-set shortmess=aoOTI     " Shorten messages and don't show intro
-set scrolloff=2         " Keep at least 2 lines above/below
-set sidescrolloff=5     " Keep at least 5 lines left/right
-set number              " Show line numbers
-set noruler             " Disable default status ruler
+set noshowmode            " Don't show mode in cmd window
+set shortmess=aoOTI       " Shorten messages and don't show intro
+set scrolloff=2           " Keep at least 2 lines above/below
+set sidescrolloff=5       " Keep at least 5 lines left/right
+set number relativenumber " Show line numbers
+set noruler               " Disable default status ruler
 set nolist                " Show hidden characters
 
 set showtabline=2       " Always show the tabs line
